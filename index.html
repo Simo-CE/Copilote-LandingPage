@@ -15,24 +15,20 @@
             <img class="logo" src="./images/vision.png" alt="">
         </div>
         <div class="menu">
-            <a href="#">HERO</a>
-            <a href="#">SERVICES</a>
-            <a href="#">CONTACT</a>
+            <a href="#hero">HERO</a>
+            <a href="#services">SERVICES</a>
+            <a href="#contact">CONTACT</a>
         </div>
     </nav>
     <!-- Première section -->
     <section class="hero">
         <div class="form1">
             <form action="">
-                <label for="fname">FIRSTNAME:</label><br>
-                <input type="text" id="fname" name="fname" value="Arnaud"><br><br><br>
-                <label for="lname">LASTNAME:</label><br>
-                <input type="text" id="lname" name="lname" value="Ngari"><br><br><br>
-                <label for="fname">EMAIL:</label><br>
-                <input type="text" id="email" name="email" value="jules.ngari@gmail.com"><br><br><br>
-                <label for="fname">PHONE:</label><br>
-                <input type="text" id="phone" name="phone" value="0624158545"><br><br><br><br>
-                <input type="submit" value="SUBMIT">
+                <input type="text" id="fname" placeholder="FIRSTNAME" name="fname" value=""><br><br><br>
+                <input type="text" id="lname" placeholder="LASTNAME" name="lname" value=""><br><br><br>
+                <input type="text" id="email" placeholder="EMAIL" name="email" value=""><br><br><br>
+                <input type="text" id="phone" placeholder="PHONE" name="phone" value=""><br><br><br><br>
+                <input type="submit" value="Faire une demande">
             </form>
         </div>
         <h1 class="title">AIGLE VISION<hr class="title_surligne"></h1>
@@ -48,7 +44,7 @@
 
      <!-- Deuxième section -->
      <section class="profile-card">
-        <h1 class="services">NOS SERVICES<hr class="services_surligne"></h1>
+        <h1 class="services" id="services">NOS SERVICES<hr class="services_surligne"></h1>
         <div class="container-card">
             <div class="card card1">
                 <div class="overlay">
@@ -86,25 +82,22 @@
     </section>
     <hr class="trait1"> 
     <!-- Troisième section -->
-    <section class="contact_form">
+    <section class="contact_form" id="contact">
       
       <div class="form1">
         <h3 class="contact">CONTACT US</h3> <br/> <br/>
 
         <form id="entreprenariat" class="form2" method="post" action="contact-form-process">
-            <label for="Name" class="">YOUR NAME</label>
             <div class="">
-                <input type="text" id="Name" name="Name" class="" required>
+                <input type="text" id="Name" placeholder="YOUR NAME" name="Name" class="" required>
             </div><br><br>
         <div class="fcf-form-group">
-            <label for="Email" class="">YOUR EMAIL ADRESS</label>
             <div class="">
-                <input type="text" id="Email" name="Email" class="" required>
+                <input type="text" id="Email" placeholder="YOUR EMAIL ADRESS" name="Email" class="" required>
             </div><br><br>
         <div class="">
-            <label for="Message" class="">YOUR MESSAGE</label>
             <div class="">
-                <textarea id="Message" name="Message" class="" rows="6" maxlength="3000" required></textarea>
+                <textarea id="Message" placeholder="YOUR MESSAGE" name="Message" class="" rows="6" maxlength="3000" required></textarea>
             </div>
         </div><br><br>
         <div class="">
